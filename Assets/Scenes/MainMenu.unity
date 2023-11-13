@@ -159,7 +159,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -100}
-  m_SizeDelta: {x: 1200, y: 100}
+  m_SizeDelta: {x: 1300, y: 100}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &207150934
 MonoBehaviour:
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PROTECT YOU TOWN
+  m_text: PROTECT YOUR TOWN
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bcb57cea00ae0764a9b8fd985d8e7fd9, type: 2}
   m_sharedMaterial: {fileID: 3526232323255670362, guid: bcb57cea00ae0764a9b8fd985d8e7fd9, type: 2}

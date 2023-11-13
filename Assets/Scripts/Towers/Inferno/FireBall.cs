@@ -10,7 +10,7 @@ public class FireBall : MonoBehaviour
 
     void Start() 
     {
-        Destroy(gameObject,10);
+        Destroy(gameObject,.33f);
     }
 
     int damage;
@@ -40,6 +40,14 @@ public class FireBall : MonoBehaviour
         yield return new WaitForSeconds(.1f);
         GetComponent<Collider2D>().enabled = false;
         StopCoroutine(IncreaseColliderRadius());
+    }
+
+    void OnTriggerExit2D(Collider2D other) 
+    {
+        if(other.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }    
     }
 
     public void KYS()

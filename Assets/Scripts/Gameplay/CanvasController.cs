@@ -106,7 +106,7 @@ public class CanvasController : MonoBehaviour
     {
         speedUp.SetBool("Speed",!speedUp.GetBool("Speed"));
         if(speedUp.GetBool("Speed"))
-            Time.timeScale = 2;
+            Time.timeScale = 2.5f;
         else if(!speedUp.GetBool("Speed"))
             Time.timeScale = 1;
     }

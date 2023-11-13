@@ -698,12 +698,12 @@ MonoBehaviour:
   projectileLevel1Prefab: {fileID: 5074076904657013080, guid: 197a25635a7bb2a4691080154c59be98, type: 3}
   projectileLevel2Prefab: {fileID: 3457859668747601405, guid: c813defcc536a2247bbacadb70cfbb88, type: 3}
   projectileLevel3Prefab: {fileID: 3377810165860869219, guid: 8f679a13abbfc7543aef7b2c9575ecc6, type: 3}
-  costLevel2: 350
-  costLevel3: 720
+  costLevel2: 400
+  costLevel3: 770
   levelUpCostText: {fileID: 4345135694723218187}
-  damageLevel1: 4
-  damageLevel2: 8
-  damageLevel3: 12
+  damageLevel1: 6
+  damageLevel2: 11
+  damageLevel3: 16
   level1AnimName: 1Attack
   level2AnimName: 2Attack
   level3AnimName: 3Attack
@@ -1846,7 +1846,7 @@ GameObject:
   - component: {fileID: 591773408115447854}
   m_Layer: 8
   m_Name: Inferno
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1965,7 +1965,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.28125, y: 0.390625}
+  m_Size: {x: 0.28, y: 0.28}
   m_EdgeRadius: 0
 --- !u!95 &6540216927020840523
 Animator:
@@ -2001,8 +2001,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireBallPrefab: {fileID: 7113501236543427820, guid: eea0a8b5c053aa84ab6a0df77d8edf3e, type: 3}
-  costLevel2: 400
-  costLevel3: 900
+  costLevel2: 450
+  costLevel3: 1000
   levelUpCostText: {fileID: 4009923125438610864}
   damageLevel1: 4
   damageLevel2: 8
@@ -2018,7 +2018,7 @@ MonoBehaviour:
   - {fileID: 5080219660252520744}
   animator: {fileID: 6540216927020840523}
   fireBallSpeed: 200
-  fireRate: 0.5
+  fireRate: 2
 --- !u!1 &4129578427812613535
 GameObject:
   m_ObjectHideFlags: 0
@@ -2592,11 +2592,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d9534384a4e7814e917237fc4d9e00a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  level1ChaseRange: 3
+  level2ChaseRange: 4
+  level3ChaseRange: 5
   arrowLevel1Prefab: {fileID: 8847821057240445540, guid: 41823520361d48748a8e4f20f2f00ede, type: 3}
   arrowLevel2Prefab: {fileID: 8036804207079243432, guid: c32cce6bcaa66794bb2c8160a42ad354, type: 3}
   arrowLevel3Prefab: {fileID: 2791800915196726209, guid: 05a9b7eb87322ca4688100bbd11b88bc, type: 3}
-  costLevel2: 300
-  costLevel3: 650
+  costLevel2: 350
+  costLevel3: 750
   levelUpCostText: {fileID: 5158407291104403906}
   damageLevel1: 3
   damageLevel2: 5
@@ -2609,9 +2612,6 @@ MonoBehaviour:
   archerWeapon: {fileID: 5099659976094723500}
   bowAnimator: {fileID: 3875566110395659821}
   arrowSpeed: 200
-  fireRateLevel1: 0.5
-  fireRateLevel2: 0.45
-  fireRateLevel3: 0.4
 --- !u!1 &5805935264937961404
 GameObject:
   m_ObjectHideFlags: 0

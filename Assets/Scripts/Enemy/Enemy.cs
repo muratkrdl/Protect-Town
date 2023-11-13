@@ -23,6 +23,8 @@ public class Enemy : MonoBehaviour
     void OnEnable() 
     {
         Enable();
+        SetMoveSpeedToInitial();
+        animator.enabled = true;
     }
 
     public float SetMoveSpeed

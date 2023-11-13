@@ -185,11 +185,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f40ab0975f60c3549a053b20ee36b020, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dieVolume: 0.0375
+  dieVolume: 0.043
   animator: {fileID: 3237566232801112698}
-  awardAmount: 60
-  teslaSlowAmount: 0.25
-  maxHitPoints: 125
+  awardAmount: 50
+  teslaSlowAmount: 0.35
+  maxHitPoints: 150
   enemy: {fileID: 8005178812373294860}
   dieSFX:
   - {fileID: 8300000, guid: deb1d8a451dd2db45849a39fef4d0a21, type: 3}

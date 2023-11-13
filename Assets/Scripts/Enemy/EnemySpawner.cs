@@ -68,20 +68,43 @@ public class EnemySpawner : MonoBehaviour
 
     public void AddEnemy(int howMany)
     {
-        Debug.Log(howMany);
         int listLength = 0;
+        int minLength = 0;
         if(howMany/2 <= 2) { listLength = 2; }
-        else if(howMany/2 <= 4) { listLength = 3; }
-        else if(howMany/2 <= 6) { listLength = 4; }
-        else if(howMany/2 <= 8) { listLength = 5; }
-        else if(howMany/2 <= 10) { listLength = 6; }
+        else if(howMany/2 <= 4) { listLength = 3; minLength++; }
+        else if(howMany/2 <= 6) 
+        { 
+            listLength = 4; 
+            minLength++; 
+            for (int i = 0; i < 10; i++)
+            {
+                currentEnemies.Remove(currentEnemies[i]);
+            }
+        }
+        else if(howMany/2 <= 8) 
+        { 
+            listLength = 5; minLength++;
+            for (int i = 0; i < 10; i++)
+            {
+                currentEnemies.Remove(currentEnemies[i]);
+            }
+        }
+        else if(howMany/2 <= 10) 
+        {
+            listLength = 6;
+            minLength++; 
+            for (int i = 0; i < 10; i++)
+            {
+                currentEnemies.Remove(currentEnemies[i]);
+            }
+        }
 
         if(howMany > 10) { listLength = enemyPrefabs.Length; }
 
         for (int i = 0; i < howMany; i++)
         {
             var enemy = Instantiate(
-            enemyPrefabs[Random.Range(0,listLength)],
+            enemyPrefabs[Random.Range(minLength,listLength)],
             transform.position,
             Quaternion.identity,
             enemiesParent

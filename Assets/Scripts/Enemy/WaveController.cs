@@ -35,13 +35,14 @@ public class WaveController : MonoBehaviour
                 WaveCleared();
                 yield return new WaitForSeconds(.5f);
             }
+            DeactiveStartWaveButton();
             yield return new WaitForSeconds(1);
         }
     }
 
     void WaveCleared()
     {
-        StopCoroutine(CheckWaveCleared());
+        StopAllCoroutines();
 
         #region DestroyAllWeaponAfterWaveCleared
         GameObject[] arrows = GameObject.FindGameObjectsWithTag("Arrow");

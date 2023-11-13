@@ -5,6 +5,11 @@ using UnityEngine;
 
 public class ArcherTower : MonoBehaviour
 {
+    [Header("FireRate")]
+    [SerializeField] float level1ChaseRange;
+    [SerializeField] float level2ChaseRange;
+    [SerializeField] float level3ChaseRange;
+
     [Header("Arrow")]
     [SerializeField] GameObject arrowLevel1Prefab;
     [SerializeField] GameObject arrowLevel2Prefab;
@@ -33,9 +38,6 @@ public class ArcherTower : MonoBehaviour
 
     [Header("GamePlay")]
     [SerializeField] float arrowSpeed = 50;
-    [SerializeField] float fireRateLevel1;
-    [SerializeField] float fireRateLevel2;
-    [SerializeField] float fireRateLevel3;
 
     string level2 = "Level2";
     string level3 = "Level3";
@@ -49,11 +51,11 @@ public class ArcherTower : MonoBehaviour
     GameObject currentArrow;
     int currentDamage;
     string currentLevelAnimName;
-    float currentFireRate;
+    float currentChaseRange;
 
     void Awake()
     {
-        currentFireRate = fireRateLevel1;
+        currentChaseRange = level1ChaseRange;
         builderTowerPointer = GetComponentInParent<BuilderTowerPointer>();
         levelUpCostText.text = costLevel2.ToString();
         currentLevel = "Level1";
@@ -135,7 +137,7 @@ public class ArcherTower : MonoBehaviour
             towerAnimator.SetTrigger(level2);
             levelUpCostText.text = costLevel3.ToString();
             builderTowerPointer.ChosedSomething();
-            currentFireRate = fireRateLevel2;
+            currentChaseRange = level2ChaseRange;
         }
         else if(currentLevel == level2)
         {
@@ -152,7 +154,7 @@ public class ArcherTower : MonoBehaviour
             currentDamage = damageLevel3;
             towerAnimator.SetTrigger(level3);
             builderTowerPointer.ChosedSomething();
-            currentFireRate = fireRateLevel3;
+            currentChaseRange = level3ChaseRange;
             builderTowerPointer.enabled = false;
         }
     }

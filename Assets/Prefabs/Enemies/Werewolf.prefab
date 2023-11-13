@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bec8cc0c13f511d4f9ea7bb36880c321, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.6
+  moveSpeed: 0.95
   damageAmount: 1
   goUpPointName: PathPoint(Up)
   goDownPointName: PathPoint(Down)
@@ -185,10 +185,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f40ab0975f60c3549a053b20ee36b020, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dieVolume: 0.0375
+  dieVolume: 0.025
   animator: {fileID: 5270039104725951340}
-  awardAmount: 35
-  teslaSlowAmount: 0.25
+  awardAmount: 30
+  teslaSlowAmount: 0.35
   maxHitPoints: 75
   enemy: {fileID: 8062421421188130755}
   dieSFX:
