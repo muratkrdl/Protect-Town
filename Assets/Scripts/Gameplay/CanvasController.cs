@@ -22,6 +22,9 @@ public class CanvasController : MonoBehaviour
 
     public TextMeshProUGUI gameOverSurvivedWave;
 
+    [SerializeField] float normalTimeScale;
+    [SerializeField] float speedUpTimeScale;
+
     void Awake() 
     {
         DisableCanvas(pauseCanvas.gameObject);
@@ -106,9 +109,21 @@ public class CanvasController : MonoBehaviour
     {
         speedUp.SetBool("Speed",!speedUp.GetBool("Speed"));
         if(speedUp.GetBool("Speed"))
-            Time.timeScale = 2.5f;
+            Time.timeScale = speedUpTimeScale;
         else if(!speedUp.GetBool("Speed"))
-            Time.timeScale = 1;
+            Time.timeScale = normalTimeScale;
+    }
+
+    public void CheclSpeedUpOpen()
+    {
+        if(speedUp.GetBool("Speed"))
+        {
+            Time.timeScale = 2.5f;
+        }
+        else if(!speedUp.GetBool("Speed"))
+        {
+            Time.timeScale = 1f;
+        }
     }
 
 }   

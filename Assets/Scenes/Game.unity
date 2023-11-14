@@ -5108,6 +5108,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FadeImage
       objectReference: {fileID: 0}
+    - target: {fileID: 6626005119718553309, guid: 5557756a454466f4e8b6f3fb00733bc6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5525,6 +5529,8 @@ MonoBehaviour:
   gameOverCanvas: {fileID: 512953370}
   winCanvas: {fileID: 123992662}
   gameOverSurvivedWave: {fileID: 2126164548}
+  normalTimeScale: 1
+  speedUpTimeScale: 2.5
 --- !u!1 &1163517338
 GameObject:
   m_ObjectHideFlags: 0
