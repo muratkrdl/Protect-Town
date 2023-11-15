@@ -15,30 +15,32 @@ If we destroy 12 waves of enemies we win the game
 
 # How To Play
 
+<img src="https://github.com/muratkrdl/Protect-Your-Town/blob/main/Pictures%20and%20Gifs/Game.png" width="auto">
+
 The button in the top left starts the next wave
-//Sol üst buton
 
 The button in the middle stops the game
-//Durdurma
-
+<img src="https://github.com/muratkrdl/Protect-Your-Town/blob/main/Pictures%20and%20Gifs/Game%20Paused.png" width="auto">
 
 The button on the left speeds up the game
-//Speed up
+<img src="https://github.com/muratkrdl/Protect-Your-Town/blob/main/Pictures%20and%20Gifs/Speed%20up.png" width="auto">
 
 If pressed again the game returns to normal speed
-//Slow down
 
 To build structures, tap the towers and select the tower you want to build.
-//inşa etmek
+<img src="https://github.com/muratkrdl/Protect-Your-Town/blob/main/Pictures%20and%20Gifs/Level%20Up.png" width="auto">
 
 Each tower can level up to 3 levels
 
 tap the built tower again to see the level up screen
-//Level up
+<img src="https://github.com/muratkrdl/Protect-Your-Town/blob/main/Pictures%20and%20Gifs/Level%20Up%202.png" width="auto">
 
 
 # Gameplay
 
+<img src="https://github.com/muratkrdl/Protect-Your-Town/blob/main/Pictures%20and%20Gifs/Gameplay.gif" width="auto">
+
+<img src="https://github.com/muratkrdl/Protect-Your-Town/blob/main/Pictures%20and%20Gifs/Gameplay-2.gif" width="auto">
 
 
 # Builds
