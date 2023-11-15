@@ -28,11 +28,13 @@ The button on the left speeds up the game
 If pressed again the game returns to normal speed
 
 To build structures, tap the towers and select the tower you want to build.
+
 <img src="https://github.com/muratkrdl/Protect-Your-Town/blob/main/Pictures%20and%20Gifs/Level%20Up.png" width="auto">
 
 Each tower can level up to 3 levels
 
 tap the built tower again to see the level up screen
+
 <img src="https://github.com/muratkrdl/Protect-Your-Town/blob/main/Pictures%20and%20Gifs/Level%20Up%202.png" width="auto">
 
 
