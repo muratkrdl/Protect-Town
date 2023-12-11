@@ -22,7 +22,7 @@ The button in the top left starts the next wave
 The button in the middle stops the game
 <img src="https://github.com/muratkrdl/Protect-Your-Town/blob/main/Pictures%20and%20Gifs/Game%20Paused.png" width="auto">
 
-The button on the left speeds up the game
+The button on the right speeds up the game
 <img src="https://github.com/muratkrdl/Protect-Your-Town/blob/main/Pictures%20and%20Gifs/Speed%20up.png" width="auto">
 
 If pressed again the game returns to normal speed
